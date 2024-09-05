@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: "Poppins", 'Times New Roman', Times, sans-serif;
 }
 
 body {
@@ -12,14 +12,40 @@ body {
 .container {
     width: 100%;
 }
+nav {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .nav .container{
     display: flex;
     justify-content: space-around;
     height: 50px;
-    background-color: aqua;
 }
 .navopt {
     display: flex;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #e5e7eb;
+}
+a:hover {
+    color: rgb(174, 189, 184);
+}
+
+.container .logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 800;
 }
 
 li {
@@ -33,37 +59,46 @@ header{
     min-height: 400px;
     justify-content: center;
     gap: 10px;
-    background-color: aquamarine;
+    background-color: #1f2937;
 }
 header .container{
-    border: 1px solid;
-    width: 350px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 5px;
     padding: 10px;
     box-sizing: border-box;
 
 }
 header .container h2{
-    width: 250px;
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
 
 }
+header .container p {
+    color: #f9faf8;
+    font-size: 18px;
+}
 header .container button {
-    width: 80px;
-    height: 25px;
+    width: 100px;
+    height: 33px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    font-weight: 700;
+    border-radius: 6px;
+    font-size: 18px;
 }
 
 .placeholderimg {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
-    height: 200px;
+    height: 250px;
     width: 350px;
+    background-color: #9ab2d3;
 }
 
 section {
@@ -75,19 +110,24 @@ section .container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid;
     flex-wrap: wrap;
     align-items: center;
     min-height: 300px;
 }
 
+section .container h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
 .boxes {
     display: flex;
     align-items: center;
-    border: 1px solid;
-    width: 600px;
+    width: 700px;
     padding: 10px;
     justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
 .box {
@@ -98,18 +138,95 @@ section .container {
 }
 
 .box .img {
-    border: 1px solid;
+    border: 5px solid;
     height: 140px;
     width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-color: #3882f6;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .box .text {
     width: 140px;
-    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #42464d;
+    text-align: center;
+}
+
+.testimony {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+    align-items: center;
+}
+
+.testimony .container {
+    width: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.testimonial {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+.container .writer {
+    align-self: flex-end;
+    font-size: 27px;
+    font-weight: 800;
+    padding-right: 50px;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    
+}
+.signup .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+    height: 100px;
+    border: 1px solid;
+    align-items: center;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+}
+
+.cta h3 {
+    font-weight: 800;
+}
+
+.cta p {
+    font-style: italic;
+}
+.signup .container button {
+    background-color: #3882f6;
+    border-color: #f9faf8;
+    border-radius: 5px;
+    color: #f9faf8;
+    width: 87px;
+    height: 23px;
+    font-weight: 600;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
 }
