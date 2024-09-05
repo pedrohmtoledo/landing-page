@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background-color: aqua;
+}
+.navopt {
+    display: flex;
+}
+
+li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    justify-content: center;
+    gap: 10px;
+    background-color: aquamarine;
+}
+header .container{
+    border: 1px solid;
+    width: 350px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+header .container h2{
+    width: 250px;
+
+}
+header .container button {
+    width: 80px;
+    height: 25px;
+}
+
+.placeholderimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    height: 200px;
+    width: 350px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 300px;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: 600px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.box .img {
+    border: 1px solid;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .text {
+    width: 140px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
